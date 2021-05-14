@@ -4,42 +4,42 @@ TITLE GRASA
 
 COLOR 1E
 
-SET sacoeLineas=######################################
+SET SEP=######################################
 
-@ECHO %sacoeLineas%
+@ECHO %SEP%
 
 @ECHO REPARADOR OCULTO 1.0
 
-@ECHO %sacoeLineas%
+@ECHO %SEP%
 
 @ECHO Status : Cambiando Atributo de Carpetas
 
 ATTRIB /d /s -r -h -s *.*
 
-@ECHO %sacoeLineas%
+@ECHO %SEP%
 
 @ECHO Status : Eliminado Accesos Directos
 
 IF EXIST *.lnk DEL *.lnk
 
-@ECHO %sacoeLineas%
+@ECHO %SEP%
 
 @ECHO Status : Eliminado Autorun
 
 IF EXIST autorun.inf DEL autorun.inf
 
-@ECHO %sacoeLineas%
+@ECHO %SEP%
 
 @ECHO Status : Cambiando propiedades
 
 ATTRIB -a -s -h -r /s /d
 
-@ECHO %sacoeLineas%
+@ECHO %SEP%
 
 @ECHO Status : Operacion Terminada
 
-@ECHO %sacoeLineas%
+@ECHO %SEP%
 
-@ECHO %sacoeLineas%
+@ECHO %SEP%
 
 PAUSE
